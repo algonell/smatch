@@ -444,7 +444,7 @@ struct symbol_list *sparse_initialize(int argc, char **argv, struct string_list 
 	 * Evaluate the complete symbol list
 	 * Note: This is not needed for normal cases.
 	 *	 These symbols should only be predefined defines and
-	 *	 declaratons which will be evaluated later, when needed.
+	 *	 declarations which will be evaluated later, when needed.
 	 *	 This is also the case when a file is directly included via
 	 *	 '-include <file>' on the command line *AND* the file only
 	 *	 contains defines, declarations and inline definitions.

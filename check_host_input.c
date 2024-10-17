@@ -7,7 +7,7 @@
  * sure the code that handles processing of such values is hardened,
  * free of memory safety issues and other potential security issues. 
  *
- * This smatch pattern helps to indentify such places.
+ * This smatch pattern helps to identify such places.
  * Currently it covers most of MSR, portIO, MMIO, PCI config space
  * and cpuid reading primitives.
  * The full list of covered functions is stored in host_input_funcs array.
@@ -77,9 +77,9 @@ unsigned long produce_expression_hash(struct expression *expr)
     int line_offset = get_lineno() - get_func_start_lineno(get_function());
     const char *str = expr_to_str(expr);
 
-    /* for non-parsable exressions and expressions
-     * contatining temp variables (like __UNIQUE_ID_*, $expr_), it is
-     * more stable to use a fix string for hasing together
+    /* for non-parsable expressions and expressions
+     * containing temp variables (like __UNIQUE_ID_*, $expr_), it is
+     * more stable to use a fix string for hashing together
      * with line offset to avoid many results that do not
      * automatically transfer between the audits on different
      * versions */
@@ -196,7 +196,7 @@ bool is_tmp_expression(struct expression *expr)
     return false;
 }
 
-/* Checks assigment expressions */
+/* Checks assignment expressions */
 static void match_assign(struct expression *expr)
 {
     struct expression *current = expr;
@@ -213,7 +213,7 @@ static void match_assign(struct expression *expr)
         return;
 
     if (current->type != EXPR_ASSIGNMENT) {
-        sm_error("'%s' Strange EXPR in assigment;", pattern_name);
+        sm_error("'%s' Strange EXPR in assignment;", pattern_name);
         return;
     }
 

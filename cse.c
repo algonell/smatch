@@ -246,11 +246,11 @@ static int insn_compare(const void *_i1, const void *_i2)
 		if (i1->src != i2->src)
 			return i1->src < i2->src ? -1 : 1;
 
-		// Note: if it can be guaranted that identical ->src
+		// Note: if it can be guaranteed that identical ->src
 		// implies identical orig_type->bit_size, then this
 		// test and the hashing of the original size in
 		// cse_collect() are not needed.
-		// It must be generaly true but it isn't guaranted (yet).
+		// It must be generally true but it isn't guaranteed (yet).
 		size1 = i1->orig_type->bit_size;
 		size2 = i2->orig_type->bit_size;
 		if (size1 != size2)

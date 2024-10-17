@@ -37,7 +37,7 @@ while (@ARGV) {
     if (/^-(o|MF|MT|MQ)$/) {
 	# Need to be checked explicitly since otherwise
 	# the argument would be processed as a
-	# (non-existant) source file or as an option.
+	# (non-existent) source file or as an option.
 	die ("$0: missing argument for $_") if !@ARGV;
 	$nargs = 1;
     }

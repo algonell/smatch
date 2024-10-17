@@ -31,7 +31,7 @@
  * If during the course of parsing the call, the preempt count gets out of
  * sync on one side of a branch statement, then we assume the lower preempt
  * count is correct.  (In other words, we choose to miss some bugs rather
- * than add false postives).
+ * than add false positives).
  */
 
 #include "smatch.h"

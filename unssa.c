@@ -11,7 +11,7 @@
  * This is similar to the "Sreedhar method I" except that the copies to the
  * temporaries are not placed at the end of the predecessor basic blocks, but
  * at the place where the phi-node operands are defined.
- * This is particulary easy since these copies are essentialy already present
+ * This is particularly easy since these copies are essentially already present
  * as the corresponding OP_PHISOURCE.
  *
  * While very simple this method create a lot more copies that really necessary.

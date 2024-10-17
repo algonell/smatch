@@ -484,7 +484,7 @@ int dominates(struct instruction *insn, struct instruction *dom, int local)
 // * the stores are only needed by others functions which would do some
 //   loads via the escaped address
 // We start by the terminating BB (normal exit BB + no-return/unreachable)
-// We walkup the BB' intruction backward
+// We walkup the BB' instruction backward
 // * we're only concerned by loads, stores & calls
 // * if we reach a call			-> we have to stop if var is non-local
 // * if we reach a load of our var	-> we have to stop
@@ -815,7 +815,7 @@ int convert_to_jump(struct instruction *insn, struct basic_block *target)
 
 	FOR_EACH_PTR(bb->children, child) {
 		if (child == target) {
-			target = NULL;	// leave first occurence
+			target = NULL;	// leave first occurrence
 			continue;
 		}
 		DELETE_CURRENT_PTR(child);

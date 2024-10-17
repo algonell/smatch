@@ -1,4 +1,4 @@
-//     OPCODE        negated   swaped    sign   float  arity, flags
+//     OPCODE        negated   swapped   sign   float  arity, flags
 
 OPCODE(BADOP,        BADOP,    BADOP,    BADOP, BADOP, 0, OPF_NONE)
 

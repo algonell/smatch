@@ -10,7 +10,7 @@
 //
 // Notation
 // ^^^^^^^^
-// The following conventions are used to describe the simplications:
+// The following conventions are used to describe the simplifications:
 // * Uppercase letters are reserved for constants:
 //   * `M` for a constant mask,
 //   * `S` for a constant shift,
@@ -31,7 +31,7 @@
 // * `ZEXT(x, N)` is used for a zero-extension *from* a size of `N` bits
 // * `OP(x, C)` is used to represent some generic operation using a constant,
 //   including when the constant is implicit (e.g. `TRUNC(x, N)`).
-// * `MASK(x, M)` is used to respresent a 'masking' instruction:
+// * `MASK(x, M)` is used to represent a 'masking' instruction:
 //   - `AND(x, M)`
 //   - `LSR(x, S)`, with `M` = (-1 << S)
 //   - `SHL(x, S)`, with `M` = (-1 >> S)

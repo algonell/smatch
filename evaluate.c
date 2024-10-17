@@ -583,7 +583,7 @@ static struct symbol *evaluate_ptr_add(struct expression *expr, struct symbol *i
 		return NULL;
 	}
 	if (is_function(base)) {
-		expression_error(expr, "arithmetics on pointers to functions");
+		expression_error(expr, "arithmetic on pointers to functions");
 		return NULL;
 	}
 
@@ -1166,7 +1166,7 @@ static struct symbol *evaluate_conditional_expression(struct expression *expr)
 	 *	Consider a conditional expression with a constant condition
 	 *	as having the same constantness as the argument corresponding
 	 *	to the truth value (including in the case of address constants
-	 *	which are defined more stricly [6.6(9)]).
+	 *	which are defined more strictly [6.6(9)]).
 	 */
 	if (expr->conditional->flags & (CEF_ACE | CEF_ADDR)) {
 		int is_true = expr_truth_value(expr->conditional);

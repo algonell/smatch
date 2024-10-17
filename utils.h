@@ -9,7 +9,7 @@
 #include <stdarg.h>
 
 ///
-// return the value coresponding to an hexadecimal digit
+// return the value corresponding to an hexadecimal digit
 unsigned int hexval(unsigned int c);
 
 ///

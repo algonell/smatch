@@ -19,7 +19,7 @@ static int nl2 = sizeof(longarray_u2);
  * Used to get "warning: excessive elements in array initializer"
  * for all elements but the first one.
  * Note: only occurs if nbr of elements is a multiple of 8
- *       (if not, theer was another problem)
+ *       (if not, there was another problem)
  */
 static _Bool boolarray_u8[] = {
 	0,

@@ -1536,7 +1536,7 @@ out:
 // @weak: 0/1 for a normal or a weak define
 // @fmt: the printf format followed by it's arguments.
 //
-// The type of the value is automatically infered:
+// The type of the value is automatically inferred:
 // TOKEN_NUMBER if it starts by a digit, TOKEN_IDENT otherwise.
 // If @fmt is null or empty, the macro is defined with an empty definition.
 void predefine(const char *name, int weak, const char *fmt, ...)
@@ -1930,7 +1930,7 @@ static inline void update_inc_ptrs(const char ***where)
 	}
 
 	/* angle_includepath is actually never updated, since we
-	 * don't suppport -iquote rught now. May change some day. */
+	 * don't support -iquote rught now. May change some day. */
 	if (*where <= angle_includepath) {
 		angle_includepath++;
 		if (where == &angle_includepath)

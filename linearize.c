@@ -1969,7 +1969,7 @@ static pseudo_t linearize_one_symbol(struct entrypoint *ep, struct symbol *sym)
 		// FIXME: this init the whole aggregate while
 		// only the existing fields need to be initialized.
 		// FIXME: this init the whole aggregate even if
-		// all fields arelater  explicitely initialized.
+		// all fields are later explicitly initialized.
 		ad.type = sym;
 		ad.address = symbol_pseudo(ep, sym);
 		linearize_store_gen(ep, value_pseudo(0), &ad);

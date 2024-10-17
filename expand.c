@@ -608,7 +608,7 @@ static int expand_addressof(struct expression *expr)
 }
 
 ///
-// lookup the type of a struct's memeber at the requested offset
+// lookup the type of a struct's member at the requested offset
 static struct symbol *find_member(struct symbol *sym, int offset)
 {
 	struct ptr_list *head, *list;
